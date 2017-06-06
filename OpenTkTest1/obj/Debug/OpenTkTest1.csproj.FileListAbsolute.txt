@@ -1,0 +1,9 @@
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\OpenTkTest1\bin\Debug\OpenTkTest1.exe.config
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\OpenTkTest1\bin\Debug\OpenTkTest1.exe
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\OpenTkTest1\bin\Debug\OpenTkTest1.pdb
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\OpenTkTest1\bin\Debug\OpenTK.dll
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\OpenTkTest1\bin\Debug\OpenTK.xml
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\OpenTkTest1\obj\Debug\OpenTkTest1.exe
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\OpenTkTest1\obj\Debug\OpenTkTest1.pdb
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\OpenTkTest1\obj\Debug\OpenTkTest1.csprojResolveAssemblyReference.cache
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\OpenTkTest1\bin\Debug\vs.glsl

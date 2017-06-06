@@ -1,0 +1,10 @@
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch3\bin\Debug\Versuch3.exe.config
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch3\bin\Debug\Versuch3.exe
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch3\bin\Debug\Versuch3.pdb
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch3\bin\Debug\OpenTK.dll
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch3\bin\Debug\OpenTK.xml
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch3\obj\Debug\Versuch3.exe
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch3\obj\Debug\Versuch3.pdb
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch3\bin\Debug\Components\Shaders\fragmentShader.frag
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch3\bin\Debug\Components\Shaders\vertextShader.vert
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch3\obj\Debug\Versuch3.csprojResolveAssemblyReference.cache

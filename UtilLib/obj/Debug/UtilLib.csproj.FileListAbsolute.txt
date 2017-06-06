@@ -1,0 +1,9 @@
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\UtilLib\bin\Debug\UtilLib.dll
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\UtilLib\bin\Debug\UtilLib.pdb
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\UtilLib\bin\Debug\OpenTK.dll
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\UtilLib\bin\Debug\OpenTK.xml
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\UtilLib\obj\Debug\UtilLib.dll
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\UtilLib\obj\Debug\UtilLib.pdb
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\UtilLib\obj\Debug\UtilLib.csprojResolveAssemblyReference.cache
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\UtilLib\bin\Debug\AssimpNet.dll
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\UtilLib\bin\Debug\AssimpNet.xml

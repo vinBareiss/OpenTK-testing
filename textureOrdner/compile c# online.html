@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://rextester.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	
+    compile c# online 
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Keywords" content="compile c# online"><meta name="Description" content="compile c# online"> <link rel="stylesheet" href="./compile c# online_files/codemirror_min.css"><link rel="stylesheet" href="./compile c# online_files/csharp.css">
+                <style type="text/css">
+                    body
+                    {
+                        font-family: Arial;    
+                    }
+                    h2
+                    {
+                        color:Gray; 
+                        margin-top: 0.5em;
+                        margin-bottom: 0.5em;
+                    }
+                    pre.resultarea, code
+                    {
+                        font-family: "Consolas",monospace;
+                        font-size: 14px;
+                        white-space: pre-wrap;       /* css-3 */
+                        white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+                        white-space: -pre-wrap;      /* Opera 4-6 */
+                        white-space: -o-pre-wrap;    /* Opera 7 */
+                        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+                        width: 99%;
+                    }
+                    a.related 
+                    {
+                        text-decoration:none;
+                        color:gray;
+                    }
+                    a.related:visited 
+                    {
+                        text-decoration:none;
+                        color:#9f9f9f;
+                    }
+                    a.related:hover 
+                    {
+                        text-decoration:underline;
+                        color:gray;
+                    }
+                    span.yellow
+                    {
+                        background: yellow;    
+                    }
+                    span.blue
+                    {
+                        background: #CCFFFF;    
+                    }
+                    span.magenta
+                    {
+                        background: #FFCCFF;    
+                    }
+                    span.options
+                    {
+                        font-family: Arial;
+                        font-size: 13px;
+                        white-space:nowrap;
+                    }
+                    div.formcontent
+                    {
+                        background: #EEEEEE;
+                        margin-bottom:0.5em;
+                    }
+                    a.selectedlink
+                    {
+                        background: #9966FF;
+                        color: White;
+                    }
+                    a.notselectedlink
+                    {
+                        color: #9966FF;
+                    }
+                    a.notselectedlink:hover
+                    {
+                        background: #9966FF;
+                        color: White;
+                    }
+                    a.smalllink:hover
+                    {
+                        background-color: #777;
+                        color: white;
+                        text-decoration: none;
+                        cursor: pointer;
+                        font-family: sans-serif;
+                        font-size: 14px;
+                    }
+                    a.smalllink
+                    {
+                        color: #444;
+                        font-family: sans-serif;
+                        font-size: 14px;
+                        text-decoration: none;
+                    }
+                    span.smalllink
+                    {
+                        color: #444;
+                        font-family: sans-serif;
+                        font-size: 14px;
+                        text-decoration: none;
+                    }
+                    span.hov:hover {
+                        background-color: #777;
+                        color: white;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                    pre#Result
+                    {
+                        margin-left: 0.5em;    
+                    }
+                    input[type=button],
+                    input[type=submit]
+                    {
+                        color: #555;
+                        border: 1px solid #555;
+                        font-weight: bold;
+                    }
+                    .input_box 
+                    {
+                        background-color:#FFFFBB;
+                        border: solid 1px gray;
+                    }
+                    .sqloutput
+                    {
+                        border-style: none;    
+                        border-collapse: collapse;
+                    }
+                    .sqloutput th, .sqloutput td
+                    {
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: Gray;
+                        padding: 0 3px 0 3px;
+                    }
+                    .carbon-text {
+                        color:white;
+                        text-align:justify;
+                        text-decoration:none;
+                    }
+                    .carbon-poweredby {
+                        color:white;
+                        display: block;
+                        text-decoration:none;
+                    }
+                    .CodeMirror {font-size: 13px}
+                </style>
+        
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script language="javascript" type="text/javascript" src="./compile c# online_files/jquery-latest.min.js.Download"></script>
+    
+    
+    <script type="text/javascript">
+        
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-15090815-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body>
+    
+    <script src="./compile c# online_files/codemirrorwithhint_min.js.Download" type="text/javascript"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        var has_changes = false;
+        var GlobalEditor;
+
+        $(document).ready(function () {
+
+            
+                  $("#linqdb_div").show();                  
+            
+
+            $('#delete_link').on('click', function () {
+                var a = confirm('Are you sure?');
+                if (a) {
+                    window.location = "http://rextester.com/delete/";
+                }
+            });
+
+            
+            $("#Input_label").click(function() {
+                
+                $("#Input").toggle();
+                if($("#Expand_input_sign").text() == "-") {
+                    $("#Expand_input_sign").text("+");
+                    $("#Expand_input_text").text("Show input");
+                }
+                else {
+                    $("#Expand_input_sign").text("-");
+                    $("#Expand_input_text").text("Hide input");
+                }
+            });
+
+            $("#Input").bind('keydown', function (e) {
+                var code = e.keyCode || e.which;
+                if (code == 119 || code == 116) //F8 or F5
+                {
+                    e.preventDefault();
+                    Run();
+                }
+            });
+            
+
+            $("#Help").click(function () {
+                window.open("http://rextester.com/main/faq",'_blank');
+            });
+            
+            $("#Full").click(function () {
+                if(!GlobalEditor.hasFocus())
+                {
+                    GlobalEditor.focus()
+                }
+                GlobalEditor.setOption("fullScreen", !GlobalEditor.getOption("fullScreen"));
+            });
+            
+
+            $("#Save").click(function () {
+
+                $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\">Title:<br/><br/>&nbsp;&nbsp;&nbsp;<input style=\"border-style:solid;border-width:1px;border-color:#FF9900;\" size=\"100\" type=\"text\" id=\"titleInput\"/>" +  ""  + "<br/><br/>&nbsp;&nbsp;&nbsp;<input type=\"button\" id=\"OKButton\" value=\"Ok\"/>&nbsp;&nbsp;&nbsp;<span style=\"color:red\" id=\"titleError\"></span><br/><br/><br/></pre>");
+                $("#titleInput").focus();
+                $('html, body').animate({ scrollTop: $("#Run").offset().top }, 200);
+                $("#OKButton").click(function() {
+                    if($("#titleInput").val().trim() == "")
+                    {
+                        $("#titleError").text("Title shouldn't be empty.");
+                        return;
+                    }
+                    if($("#titleInput").val().length > 100)
+                    {
+                        $("#titleError").text("Title shouldn't be longer than 100 characters.");
+                        return;
+                    }
+                    $("#Title").val($("#titleInput").val());
+                    $("#Privacy").val($('input[name=privacyInput]:checked').val());
+                    $("#PrivacyUsers").val($("#privacyUsersInput").val());
+                    
+                    
+                        $("#SavedOutput").val($("#Result").text());
+                    
+                    $("#WholeError").val($("#ErrorSpan").text());
+                    $("#WholeWarning").val($("#WarningSpan").text());
+                    $("#StatsToSave").val($("#Stats").text());
+                    Save(1);
+                });
+
+                
+            });
+            $("#Wall").click(function () {
+                $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\">Title:<br/><br/>&nbsp;&nbsp;&nbsp;<input style=\"border-style:solid;border-width:1px;border-color:#FF9900;\" size=\"100\" type=\"text\" id=\"titleInput\"/>&nbsp;&nbsp;<br/><br/>Choose the wall:<br/><input type=\"radio\" name=\"wall_group\" value=\"1\" checked>&nbsp;My wall<br/><input type=\"radio\" name=\"wall_group\" value=\"2\">&nbsp;Code wall"  +  ""  +  "<br/><br/><input type=\"button\" id=\"OKButton\" value=\"Ok\"/>&nbsp;&nbsp;&nbsp;<span style=\"color:red\" id=\"titleError\"></span><br/><br/><br/></pre>");
+                $("#titleInput").focus();
+                $('html, body').animate({ scrollTop: $("#Run").offset().top }, 200);
+                $("#OKButton").click(function() {
+                    if($("#titleInput").val().trim() == "")
+                    {
+                        $("#titleError").text("Title shouldn't be empty.");
+                        return;
+                    }
+                    if($("#titleInput").val().length > 100)
+                    {
+                        $("#titleError").text("Title shouldn't be longer than 100 characters.");
+                        return;
+                    }
+                    $("#Title").val($("#titleInput").val());
+                    $("#Privacy").val($('input[name=privacyInput]:checked').val());
+                    
+                    $("#SavedOutput").val($("#Result").text());
+                    
+                    $("#WholeError").val($("#ErrorSpan").text());
+                    $("#WholeWarning").val($("#WarningSpan").text());
+                    $("#StatsToSave").val($("#Stats").text());
+                    if($('input[type=radio]:checked').val() == '1')
+                        Save(4);
+                    else
+                        Save(2);
+                });
+            });
+            
+            $("#Live").click(function () {
+
+                $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\">Title:<br/><br/>&nbsp;&nbsp;&nbsp;<input style=\"border-style:solid;border-width:1px;border-color:#FF9900;\" size=\"100\" type=\"text\" id=\"titleInput\"/>"+  ""  +"<br/><br/>&nbsp;&nbsp;&nbsp;<input type=\"button\" id=\"OKButton\" value=\"Ok\"/>&nbsp;&nbsp;&nbsp;<span style=\"color:red\" id=\"titleError\"></span><br/><br/><br/></pre>");
+                $("#titleInput").focus();
+                $('html, body').animate({ scrollTop: $("#Run").offset().top }, 200);
+                $("#OKButton").click(function() {
+                    if($("#titleInput").val().trim() == "")
+                    {
+                        $("#titleError").text("Title shouldn't be empty.");
+                        return;
+                    }
+                    if($("#titleInput").val().length > 100)
+                    {
+                        $("#titleError").text("Title shouldn't be longer than 100 characters.");
+                        return;
+                    }
+                    $("#Title").val($("#titleInput").val());
+                    $("#Privacy").val($('input[name=privacyInput]:checked').val());
+                    $("#PrivacyUsers").val($("#privacyUsersInput").val());
+
+                    
+                    $("#SavedOutput").val($("#Result").text());
+                        
+                    $("#WholeError").val($("#ErrorSpan").text());
+                    $("#WholeWarning").val($("#WarningSpan").text());
+                    $("#StatsToSave").val($("#Stats").text());
+                    Save(3); 
+                });
+            });
+            
+            $("#Run").click(function () {
+                Run();
+            });
+            $("#LanguageChoiceWrapper").change(function () {
+                Reload();
+            });
+            $("#EditorChoiceWrapper").change(function () {
+                Reload();
+            });       
+            
+            
+
+            var AreYouSure = function() {
+                if (has_changes) {
+                        return confirm('Current changes will be lost, continue?');                
+                    } else 
+                    {
+                        return true;
+                    }
+            }
+            var Reload = function () {
+
+                
+                    if(!AreYouSure())
+                    {
+                        $("#LanguageChoiceWrapper").val("1");
+                        $("#EditorChoiceWrapper").val("1");
+                        return;
+                    }
+                
+
+                window.onbeforeunload = null;
+
+                var act = "";
+
+                if ($("#LanguageChoiceWrapper").val() == 15)
+                {
+                    act = "/l/nasm_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 1)
+                {
+                    act = "/l/csharp_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 7)
+                {
+                    act = "/l/cpp_online_compiler_gcc";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 27)
+                {
+                    act = "/l/cpp_online_compiler_clang";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 28)
+                {
+                    act = "/l/cpp_online_compiler_visual";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 6)
+                {
+                    act = "/l/c_online_compiler_gcc";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 26)
+                {
+                    act = "/l/c_online_compiler_clang";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 29)
+                {
+                    act = "/l/c_online_compiler_visual";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 18)
+                {
+                    act = "/l/common_lisp_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 30)
+                {
+                    act = "/l/d_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 3)
+                {
+                    act = "/l/fsharp_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 20)
+                {
+                    act = "/l/go_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 11)
+                {
+                    act = "/l/haskell_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 4)
+                {
+                    act = "/l/java_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 17)
+                {
+                    act = "/l/js_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 14)
+                {
+                    act = "/l/lua_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 23)
+                {
+                    act = "/l/nodejs_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 25)
+                {
+                    act = "/l/octave_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 10)
+                {
+                    act = "/l/objectivec_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 9)
+                {
+                    act = "/l/pascal_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 13)
+                {
+                    act = "/l/perl_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 8)
+                {
+                    act = "/l/php_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 19)
+                {
+                    act = "/l/prolog_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 5)
+                {
+                    act = "/l/python_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 24)
+                {
+                    act = "/l/python3_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 31)
+                {
+                    act = "/l/r_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 12)
+                {
+                    act = "/l/ruby_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 21)
+                {
+                    act = "/l/scala_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 22)
+                {
+                    act = "/l/scheme_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 16)
+                {
+                    act = "/l/sql_server_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 33)
+                {
+                    act = "/l/mysql_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 35)
+                {
+                    act = "/l/oracle_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 34)
+                {
+                    act = "/l/postgresql_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 32)
+                {
+                    act = "/l/tcl_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 2)
+                {
+                    act = "/l/visual_basic_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 36)
+                {
+                    act = "/l/client_side";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 37)
+                {
+                    act = "/l/swift_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 38)
+                {
+                    act = "/l/bash_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 39)
+                {
+                    act = "/l/ada_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 40)
+                {
+                    act = "/l/erlang_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 41)
+                {
+                    act = "/l/elixir_online_compiler";
+                }
+                else if ($("#LanguageChoiceWrapper").val() == 42)
+                {
+                    act = "/l/ocaml_online_compiler";
+                }
+                else
+                {
+                    act = "/l/csharp_online_compiler";
+                }
+                
+                $('#mainForm').attr('action', act);
+
+                $("#Input").val('');
+                $("#SavedOutput").val('');
+                $("#WholeError").val('');
+                $("#WholeWarning").val('');
+                $("#StatsToSave").val('');
+                $("#Title").val('');
+                $("#mainForm").submit();
+            };
+
+            $.ajaxSetup({
+                timeout: 60000,
+                error: function (request, status, err) {
+                    $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\">Error occurred ("+err+"). Try again later.</pre>");
+                }
+            });
+        });
+
+        function Save (what) {
+            $('html, body').animate({ scrollTop: $("#Link").offset().top }, 500);
+
+            $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\">Saving...</pre>");
+            $("#Warning").replaceWith("<div id=\"Warning\"></div>");
+            $("#Error").replaceWith("<div id=\"Error\"></div>");
+            $("#Result").replaceWith("<pre id=\"Result\" class=\"resultarea\"></pre>");
+            $("#Files").replaceWith("<pre id=\"Files\"></pre>");
+
+            $("#Program").val(GlobalEditor.getValue());
+
+            var serializedData = $("#mainForm").serialize();
+            if(what == 1)
+            {
+                $.post('/rundotnet/save', serializedData,
+                        function (data) {
+                            var obj = jQuery.parseJSON(data);
+                            if(obj.Errors != null)
+                            {
+                                $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\"></pre>");
+                                $("#Error").replaceWith("<div id=\"Error\"><pre style=\"color: Red\" class=\"resultarea\">Error:</pre><pre id=\"ErrorSpan\" class=\"resultarea\"></pre></div>");
+                                $("#ErrorSpan").text(obj.Errors.replace(/\r/g, ""));
+                                return;
+                            }     
+                            has_changes = false;               
+                            window.onbeforeunload = null;
+                            if(obj.Updated == true)
+                                
+                            $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\">Version created, updates saved</pre>");
+                                
+                        else        
+                                $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\">Permanent link: <a href=\""+obj.Url+"\">"+obj.Url+"</a></pre>");
+                        }, 'text');
+            }
+            else if(what == 2)
+            {
+                $.post('/rundotnet/saveonwall', serializedData,
+                    function (data) {
+                        var obj = jQuery.parseJSON(data);
+                        if(obj.Errors != null)
+                        {
+                            $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\"></pre>");
+                            $("#Error").replaceWith("<div id=\"Error\"><pre style=\"color: Red\" class=\"resultarea\">Error:</pre><pre id=\"ErrorSpan\" class=\"resultarea\"></pre></div>");
+                            $("#ErrorSpan").text(obj.Errors.replace(/\r/g, ""));
+                            return;
+                        }                        
+                        $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\">This snippet is on a wall, permanent link: <a href=\""+obj.Url+"\">"+obj.Url+"</a></pre>");
+                    }, 'text');       
+            }
+            else if(what == 4)
+            {
+                $.post('/rundotnet/saveonpersonalwall', serializedData,
+                    function (data) {
+                        var obj = jQuery.parseJSON(data);
+                        if(obj.NotLoggedIn == true)
+                        {
+                            $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\">Please <a href=\"login\">log in</a> first.</pre>");
+                            return;
+                        }
+                        else if(obj.Errors != null)
+                        {
+                            $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\"></pre>");
+                            $("#Error").replaceWith("<div id=\"Error\"><pre style=\"color: Red\" class=\"resultarea\">Error:</pre><pre id=\"ErrorSpan\" class=\"resultarea\"></pre></div>");
+                            $("#ErrorSpan").text(obj.Errors.replace(/\r/g, ""));
+                            return;
+                        }                        
+                        $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\">This snippet is on a wall, permanent link: <a href=\""+obj.Url+"\">"+obj.Url+"</a></pre>");
+                    }, 'text');       
+            }
+            
+            else if(what == 3)
+            {
+                $.post('/rundotnet/savelive', serializedData,
+                    function (data) {
+                        var obj = jQuery.parseJSON(data);
+                        if(obj.Errors != null)
+                        {
+                            $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\"></pre>");
+                            $("#Error").replaceWith("<div id=\"Error\"><pre style=\"color: Red\" class=\"resultarea\">Error:</pre><pre id=\"ErrorSpan\" class=\"resultarea\"></pre></div>");
+                            $("#ErrorSpan").text(obj.Errors.replace(/\r/g, ""));
+                            return;
+                        }                        
+                        $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\">Permanent live session created at <a href=\""+obj.Url+"\">"+obj.Url+"</a>\nAnyone who has rights to visit this link can edit code and see changes that others make in real-time.</pre>");
+                    }, 'text');       
+            }
+            
+        };
+
+        function RunClientSide () {
+            $('html, body').animate({ scrollTop: $("#Link").offset().top }, 500);
+            $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\"></pre>");
+            $("#Warning").replaceWith("<div id=\"Warning\"></div>");
+            $("#Error").replaceWith("<div id=\"Error\"></div>");
+
+            $("#Program").val(GlobalEditor.getValue());
+
+            $("#ifr").replaceWith("<iframe style=\"width:100%;height:600px;\" name=\"ifr\" id=\"ifr\" frameBorder=\"0\" sandbox=\"allow-scripts allow-pointer-lock allow-same-origin allow-popups allow-modals allow-forms\" allowtransparency=\"true\"></iframe>");
+            var iframe = document.getElementById('ifr');
+            iframe = iframe.contentWindow || ( iframe.contentDocument.document || iframe.contentDocument);
+            iframe.document.open();
+            iframe.document.write($("#Program").val());
+            iframe.document.close();
+        }
+        function RunNonCS()
+        {
+            $('html, body').animate({ scrollTop: $("#Link").offset().top }, 500);
+
+            $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\">Working...</pre>");
+            $("#Warning").replaceWith("<div id=\"Warning\"></div>");
+            $("#Error").replaceWith("<div id=\"Error\"></div>");
+            $("#Result").replaceWith("<pre id=\"Result\" class=\"resultarea\"></pre>");
+            $("#Files").replaceWith("<pre id=\"Files\"></pre>");
+
+            $("#Program").val(GlobalEditor.getValue());
+            
+            var serializedData = $("#mainForm").serialize();
+            $.post('/rundotnet/Run', serializedData,
+                    function (data) {
+                        $("#Link").replaceWith("<pre id=\"Link\" class=\"resultarea\"></pre>");                        
+                        var obj = jQuery.parseJSON(data);
+                        if(obj.Warnings != null)
+                        {
+                            $("#Warning").replaceWith("<div id=\"Warning\"><pre style=\"color: Orange\" class=\"resultarea\">Warning(s):</pre><pre id=\"WarningSpan\" class=\"resultarea\"></pre></div>");
+                            $("#WarningSpan").text(obj.Warnings.replace(/\r/g, ""));
+                        }
+                        if(obj.Errors != null)
+                        {
+                            $("#Error").replaceWith("<div id=\"Error\"><pre style=\"color: Red\" class=\"resultarea\">Error(s)"+''+":</pre><pre id=\"ErrorSpan\" class=\"resultarea\"></pre></div>");
+                            $("#ErrorSpan").text(obj.Errors.replace(/\r/g, ""));
+                        }
+
+                        
+                        if(obj.Result != null)
+                            $("#Result").text(obj.Result.replace(/\r/g, ""));
+                        
+                        if(obj.Files != null)
+                        {
+                            for (var key in obj.Files) 
+                            {             
+                                var img_div = $(document.createElement('div'));
+                                var img = $(document.createElement('img'));
+                                
+                                img.attr('src', "data:image/png;base64," + obj.Files[key]).height(600).width(700);
+                                
+                                img.appendTo(img_div);
+                                img_div.appendTo($('#Files'));
+                            }
+                        }
+                        $("#Stats").text(obj.Stats);
+
+                        $('html, body').animate({ scrollTop: $("#Run").offset().top }, 500);
+                    }, 'text');
+        }
+
+        var total_runs = 0;
+        function Run () {
+            
+                RunNonCS();
+            
+
+            total_runs++;
+            
+            if(total_runs % 3 == 0)
+            {
+                
+                    $('#ads_div').replaceWith('<div id="ads_div" name="ads_div" style="background-color:mediumpurple;color:mediumpurple; position:relative;margin-top:105px;margin-bottom:-3000px;z-index:1000;float:right;width:130px;font-size:14px;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=rextestercom" id="_carbonads_js">' + '</ script></div>');
+                
+            }         
+            
+        };
+
+        
+        $('body').keypress(function(e){
+
+            if(String.fromCharCode( e.which ) == ':') {
+                var cur = GlobalEditor.getCursor();
+                var ln = GlobalEditor.getValue().split("\n")[cur.line];
+                if(cur.ch > 0 && ln[cur.ch-1] == ':' ) {
+                    setTimeout(function() {
+                        CodeMirror.showHint(GlobalEditor, CodeMirror.hint.csharp, {async: true});
+                    }, 100)
+                }
+            }
+            if(String.fromCharCode( e.which ) == '>') {
+                var cur = GlobalEditor.getCursor();
+                var ln = GlobalEditor.getValue().split("\n")[cur.line];
+                if(cur.ch > 0 && ln[cur.ch-1] == '-' ) {
+                    setTimeout(function() {
+                        CodeMirror.showHint(GlobalEditor, CodeMirror.hint.csharp, {async: true});
+                    }, 100)
+                }
+            }
+
+            if(String.fromCharCode( e.which ) == '.') {
+                setTimeout(function() {
+                    CodeMirror.showHint(GlobalEditor, CodeMirror.hint.csharp, {async: true});
+                }, 100)
+            }
+        });
+         
+        
+
+        function keyEvent(cm, e) {
+            
+                if(!has_changes){
+                    window.onbeforeunload = function() {
+                        return 'Current changes will be lost, continue?';
+                    };
+                    has_changes = true;
+                }
+            
+            // Hook into F8 (and F5)
+            if ((e.keyCode == 116 || e.keyCode == 119) && e.type == 'keydown') {
+                e.stop();                
+                Run();
+            }
+        }
+        //]]>
+    </script>
+  
+    
+        <script type="text/javascript" src="./compile c# online_files/clike.js.Download"></script>
+    
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function () {
+            var editor = CodeMirror.fromTextArea(document.getElementById("Program"), {
+                //matchBrackets : true,
+                
+                    mode: "text/x-csharp",
+                
+                lineNumbers: true,
+                indentUnit: 4,
+                matchBrackets: true,
+                
+                        theme: "csharp",
+                    
+                onKeyEvent: keyEvent,
+            extraKeys: {
+                
+                        "Ctrl-Space" : "autocomplete",
+                
+                    "Tab": "indentMore", 
+                    "Shift-Tab": "indentLess",
+
+                    
+                        "F11": function(cm) {
+                                cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+                            },
+                        "Esc": function(cm) {
+                                if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
+                            }, 
+                        "F8": function(cm) {
+                                if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
+                        }
+                    
+                }
+            });
+            GlobalEditor = editor;
+            
+            
+                    CodeMirror.commands.autocomplete = function (cm) {
+                        CodeMirror.showHint(cm, CodeMirror.hint.csharp, { async: true });
+                    };
+            
+        });
+    //]]>
+    </script>
+
+    
+    <table style="width: 100%; padding-right: 2em">
+        <tbody><tr>
+            <td align="right">
+                <a class="selectedlink" href="http://rextester.com/">Run Code</a>&nbsp;
+                |&nbsp;<a class="notselectedlink" href="http://rextester.com/codewall">Code Wall</a>&nbsp;
+                |&nbsp;<a class="notselectedlink" href="http://rextester.com/users">Users</a>&nbsp;
+                
+                |&nbsp;<a class="notselectedlink" href="http://rextester.com/tester">Misc</a>&nbsp;
+                |&nbsp;<a class="notselectedlink" href="http://rextester.com/feedback">Feedback</a>&nbsp;
+                |&nbsp;<a class="notselectedlink" href="http://rextester.com/main">About</a>&nbsp;  
+                
+                    |&nbsp;<a class="notselectedlink" href="http://rextester.com/login">Login</a>&nbsp;
+                
+                    |&nbsp;<a href="http://rextester.com/theme" class="notselectedlink" title="Change theme">Theme</a>&nbsp;
+                    |&nbsp;<a href="http://linqdb.net/" class="notselectedlink" title="Linqdb">Linqdb</a>&nbsp;
+            </td>
+        </tr>
+    </tbody></table>
+    
+            <div id="ads_div" name="ads_div" style="background-color:mediumpurple;color:mediumpurple; position:relative;margin-top:105px;margin-bottom:-3000px;z-index:1000;float:right;width:130px;font-size:14px;">
+                <script async="" type="text/javascript" src="http://cdn.carbonads.com/carbon.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=rextestercom" id="_carbonads_js"></script>
+            </div>
+            <div id="linqdb_div" name="linqdb_div" style="background-color: mediumpurple; color: mediumpurple; position: relative; margin-top: 310px; margin-bottom: -3000px; z-index: 500; float: right; width: 130px; font-size: 14px;">
+                <a style="text-decoration:none;" href="http://linqdb.net/">
+                    <img width="130" height="110" src="data:image/png;base64,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">
+                    <p style="color:white;">Linqdb - fast and easy database for .Net</p>
+                </a>
+            </div>
+        
+    
+            <h2>
+                compile c# online 
+
+            </h2>
+            <form action="http://rextester.com/runcode" id="mainForm" method="post">
+        <div class="formcontent" style="padding-top: 0.5em; margin-bottom: 2em;">
+            <table style="width: 95%; margin:0;">
+                <tbody><tr>
+                    <td align="left">
+                        <span style="margin: 0 0.5em 0 0">Language:</span><select class="langdropdown" id="LanguageChoiceWrapper" name="LanguageChoiceWrapper"><option value="39">Ada</option>
+<option value="15">Assembly</option>
+<option value="38">Bash</option>
+<option selected="selected" value="1">C#</option>
+<option value="7">C++ (gcc)</option>
+<option value="27">C++ (clang)</option>
+<option value="28">C++ (vc++)</option>
+<option value="6">C (gcc)</option>
+<option value="26">C (clang)</option>
+<option value="29">C (vc)</option>
+<option value="36">Client Side</option>
+<option value="18">Common Lisp</option>
+<option value="30">D</option>
+<option value="41">Elixir</option>
+<option value="40">Erlang</option>
+<option value="3">F#</option>
+<option value="20">Go</option>
+<option value="11">Haskell</option>
+<option value="4">Java</option>
+<option value="17">Javascript</option>
+<option value="14">Lua</option>
+<option value="33">MySql</option>
+<option value="23">Node.js</option>
+<option value="42">Ocaml</option>
+<option value="25">Octave</option>
+<option value="10">Objective-C</option>
+<option value="35">Oracle</option>
+<option value="9">Pascal</option>
+<option value="13">Perl</option>
+<option value="8">Php</option>
+<option value="34">PostgreSQL</option>
+<option value="19">Prolog</option>
+<option value="5">Python</option>
+<option value="24">Python 3</option>
+<option value="31">R</option>
+<option value="12">Ruby</option>
+<option value="21">Scala</option>
+<option value="22">Scheme</option>
+<option value="16">Sql Server</option>
+<option value="37">Swift</option>
+<option value="32">Tcl</option>
+<option value="2">Visual Basic</option>
+</select>
+                        
+                        <span style="margin: 0 0.5em 0 0.5em">Editor:</span><select id="EditorChoiceWrapper" name="EditorChoiceWrapper"><option selected="selected" value="1">CodeMirror</option>
+<option value="2">EditArea</option>
+<option value="3">Simple</option>
+</select>
+                        
+                    </td>
+                </tr>
+            </tbody></table>
+            
+            
+                  <div style="width: 95%; margin-top:1em;">
+                        <textarea class="editor" spellcheck="false" cols="1000" id="Program" name="Program" rows="30" style="width: 100%; resize: none; display: none;">//Rextester.Program.Main is the entry point for your code. Don't change it.
+//Compiler version 4.0.30319.17929 for Microsoft (R) .NET Framework 4.5
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace Rextester
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            //Your code goes here
+            Console.WriteLine("Hello, world!");
+        }
+    }
+}</textarea><div class="CodeMirror cm-s-csharp CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 317px; left: 118.688px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 29px;"><div style="height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 573.047px; margin-left: 29px; min-height: 411px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1; display: none;"><div class="CodeMirror-selected" style="position: absolute; left: 89.6875px; top: 195px; width: 249.922px; height: 13px;"></div></div><div class="CodeMirror-code" style=""><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">1</div></div><pre><span class="cm-comment">//Rextester.Program.Main is the entry point for your code. Don't change it.</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">2</div></div><pre><span class="cm-comment">//Compiler version 4.0.30319.17929 for Microsoft (R) .NET Framework 4.5</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">3</div></div><pre> </pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">4</div></div><pre><span class="cm-keyword">using</span> <span class="cm-variable">System</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">5</div></div><pre><span class="cm-keyword">using</span> <span class="cm-variable">System</span>.<span class="cm-variable">Collections</span>.<span class="cm-variable">Generic</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">6</div></div><pre><span class="cm-keyword">using</span> <span class="cm-variable">System</span>.<span class="cm-variable">Linq</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">7</div></div><pre><span class="cm-keyword">using</span> <span class="cm-variable">System</span>.<span class="cm-variable">Text</span>.<span class="cm-variable">RegularExpressions</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">8</div></div><pre> </pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">9</div></div><pre><span class="cm-keyword">namespace</span> <span class="cm-variable">Rextester</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">10</div></div><pre>{</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">11</div></div><pre>    <span class="cm-keyword">public</span> <span class="cm-keyword">class</span> <span class="cm-variable">Program</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">12</div></div><pre>    {</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">13</div></div><pre>        <span class="cm-keyword">public</span> <span class="cm-keyword">static</span> <span class="cm-keyword">void</span> <span class="cm-variable">Main</span>(<span class="cm-builtin">string</span>[] <span class="cm-variable">args</span>)</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">14</div></div><pre>        {</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">15</div></div><pre>            <span class="cm-comment">//Your code goes here</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">16</div></div><pre>            <span class="cm-builtin">int</span> <span class="cm-variable">mathe</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">17</div></div><pre>            <span class="cm-builtin">int</span> <span class="cm-variable">deutsch</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">18</div></div><pre>            <span class="cm-builtin">int</span> <span class="cm-variable">englisch</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">19</div></div><pre>            <span class="cm-builtin">int</span> <span class="cm-variable">wirtschaft</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">20</div></div><pre>            <span class="cm-builtin">int</span> <span class="cm-variable">mdl</span> <span class="cm-operator">=</span> <span class="cm-number">13</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">21</div></div><pre>            </pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">22</div></div><pre>            <span class="cm-builtin">int</span>[] <span class="cm-variable">noten</span> <span class="cm-operator">=</span> {<span class="cm-variable">mathe</span>, <span class="cm-variable">deutsch</span>, <span class="cm-variable">englisch</span>, <span class="cm-variable">wirtschaft</span>, <span class="cm-variable">mdl</span>};</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">23</div></div><pre>            </pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">24</div></div><pre>            <span class="cm-keyword">foreach</span>(<span class="cm-builtin">int</span> <span class="cm-variable">node</span> <span class="cm-keyword">in</span> <span class="cm-variable">noten</span>){</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">25</div></div><pre>            </pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">26</div></div><pre>            }</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">27</div></div><pre>            </pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">28</div></div><pre>            <span class="cm-variable">Console</span>.<span class="cm-variable">WriteLine</span>();</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">29</div></div><pre>        }</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">30</div></div><pre>    }</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">31</div></div><pre>}</pre></div></div><div class="CodeMirror-cursor" style="left: 89.6875px; top: 312px; height: 13px;"> </div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none;"> </div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 411px;"></div><div class="CodeMirror-gutters" style="height: 500px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div>
+                  </div>
+              
+                <div style="width: 94.5%; margin-top:0.5em;margin-left:0;">                            
+                    <textarea spellcheck="false" cols="1000" id="Input" name="Input" rows="5" class="input_box" style="width: 100%;display:none;"></textarea>
+                </div>
+            
+            <table style="width: 95%; margin-top:0.5em;">
+                <tbody><tr>
+                    <td align="left">
+                        <input id="Run" type="button" value="Run it (F8)">
+                        
+                        <input style="margin-left:1em" id="Save" type="button" value="Save it">    
+                        <input id="ShowWarnings" name="ShowWarnings" style="vertical-align: middle; margin-left: 1.5em;" type="checkbox" value="true"><input name="ShowWarnings" type="hidden" value="false">
+                                <label for="ShowWarnings" style="margin-left: 0.2em;font-size: 0.85em;vertical-align: middle;">Show compiler warnings</label>
+                        <span id="Input_label" style="margin-left: 0.5em;font-size: 0.85em; cursor:pointer;">[&nbsp;<span id="Expand_input_sign" style="font-size: 0.85em;">+</span>&nbsp;]&nbsp;<span id="Expand_input_text">Show input</span></span>
+                        
+                    </td>
+                    <td align="right">
+                        
+                            <input style="margin-left:1em;" id="Live" type="button" value="Live cooperation">   
+                            
+                        <input style="margin-left:1em;" id="Wall" type="button" value="Put on a wall">
+                        
+                            <input title="Fullscreen (F11), Esc to exit" style="margin-left:1em;" id="Full" type="button" value="F">
+                        
+                        <input style="margin-left:1em;" id="Help" type="button" value="?">
+                        
+                    </td>                  
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div style="margin-top: 0.8em;font-size: 0.85em;" id="Stats">&nbsp;</div>
+                    </td>
+                </tr>
+            </tbody></table>
+
+            <input id="Privacy" name="Privacy" type="hidden">
+            <input id="PrivacyUsers" name="PrivacyUsers" type="hidden">
+            <input id="Title" name="Title" type="hidden">
+            <input id="SavedOutput" name="SavedOutput" type="hidden">
+            <input id="WholeError" name="WholeError" type="hidden">
+            <input id="WholeWarning" name="WholeWarning" type="hidden">
+            <input id="StatsToSave" name="StatsToSave" type="hidden">
+            <input id="CodeGuid" name="CodeGuid" type="hidden" value="">
+            <input id="IsInEditMode" name="IsInEditMode" type="hidden" value="False">
+            <input id="IsLive" name="IsLive" type="hidden" value="False">
+            
+        </div>
+
+        </form>
+    <pre id="Link" class="resultarea"></pre>
+
+    <div id="Warning"></div>
+
+    <div id="Error"></div> 
+
+    
+        <pre id="Result" class="resultarea"></pre>
+        <pre id="Files"></pre>
+    
+
+
+</body></html>

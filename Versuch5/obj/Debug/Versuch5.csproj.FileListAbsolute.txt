@@ -1,0 +1,8 @@
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch5\bin\Debug\Versuch5.exe.config
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch5\bin\Debug\Versuch5.exe
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch5\bin\Debug\Versuch5.pdb
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch5\bin\Debug\OpenTK.dll
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch5\bin\Debug\OpenTK.xml
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch5\obj\Debug\Versuch5.exe
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch5\obj\Debug\Versuch5.pdb
+C:\Users\Vincent\Documents\Visual Studio 2017\Projects\OpenTkForms\Versuch5\obj\Debug\Versuch5.csprojResolveAssemblyReference.cache

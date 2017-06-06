@@ -19,7 +19,7 @@ namespace Util
                     GameWindowFlags.Default,
                     DisplayDevice.Default,
                     4, // OpenGL major version
-                    0, // OpenGL minor version
+                    5, // OpenGL minor version
                     GraphicsContextFlags.ForwardCompatible) {
             Title += ": OpenGL Version: " + GL.GetString(StringName.Version);
         }
@@ -50,8 +50,11 @@ namespace Util
         protected override void OnUpdateFrame(FrameEventArgs e) {
             HandleKeyboard();
         }
+
+        private double _time = 0;
         protected override void OnRenderFrame(FrameEventArgs e) {
-         //   Title = $"(Vsync: {VSync}) FPS: {1f / e.Time:0}";
+           Title = $"(Vsync: {VSync}) FPS: {1f / e.Time:0}";
+            _time += e.Time;
 
             Color4 backColor = new Color4()
             {
@@ -65,9 +68,11 @@ namespace Util
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
             GL.UseProgram(_program);
+            //add attr
+
+
             GL.DrawArrays(PrimitiveType.Points, 0, 1);
             GL.PointSize(10);
-
             SwapBuffers();
         }
 
@@ -78,6 +83,7 @@ namespace Util
                 Exit();
             }
         }
+
         private int CompileShaders() {
             var vertexShader = GL.CreateShader(ShaderType.VertexShader);
             string verShader = OpenTkConsole.Properties.Resources.vertexShader.ToString();
@@ -99,9 +105,12 @@ namespace Util
             GL.DeleteShader(fragmentShader);
 
             string info = GL.GetShaderInfoLog(fragmentShader);
+            Console.WriteLine(info);
             string info2 = GL.GetShaderInfoLog(vertexShader);
-
+            Console.WriteLine(info2);
             string info3 = GL.GetProgramInfoLog(program);
+            Console.WriteLine(info3);
+
             return program;
         }
     }
